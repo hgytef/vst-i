@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>مطعم JX الرائع</title>
+<style>
+body { margin:0; font-family:Arial,sans-serif; background:#111; color:#fff; direction:rtl; }
+header { position:relative; height:70vh; overflow:hidden; }
+header img { width:100%; height:70vh; object-fit:cover; position:absolute; top:0; left:0; transition:opacity 1s ease-in-out; opacity:0; }
+header img.active { opacity:1; }
+header h1 { position:relative; z-index:10; background:rgba(0,0,0,0.6); padding:20px 40px; font-size:48px; border-radius:10px; text-align:center; margin-top:20vh; }
+header p { position:relative; z-index:10; background:rgba(255,69,0,0.7); padding:10px 20px; font-size:24px; border-radius:10px; margin-top:15px; display:inline-block; }
+.button { position:relative; z-index:10; background:#ff4500; color:#fff; padding:10px 20px; border-radius:10px; font-weight:bold; display:inline-block; margin-top:10px; transition:background 0.3s; }
+.button:hover { background:#e03e00; }
+section { padding:40px; text-align:center; }
+h2 { margin-bottom:20px; color:#ff4500; }
+.menu { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.item { background:#222; padding:20px; border-radius:10px; transition:transform 0.3s, box-shadow 0.3s; }
+.item:hover { transform:translateY(-5px); box-shadow:0 5px 20px #ff4500; }
+.item img { width:100%; border-radius:10px; height:150px; object-fit:cover; transition:transform 0.3s; }
+.item img:hover { transform:scale(1.1); }
+footer { background:#000; padding:20px; text-align:center; margin-top:20px; }
+.map { margin:20px 0; border-radius:10px; overflow:hidden; height:300px; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max" class="active">
+  <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb30">
+  <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+  <h1>مطعم JX الرائع</h1>
+  <p>🍔 اتصل الآن للتوصيل: <a href="tel:+905355798240">05355798240</a></p>
+  <a class="button" href="https://wa.me/905355798240" target="_blank">اطلب الآن عبر واتساب</a>
+</header>
+
+<section>
+  <h2>🎉 عروض اليوم</h2>
+  <div class="item">
+    <h3>خصم 10% على كل البرجر اليوم!</h3>
+  </div>
+</section>
+
+<section>
+  <h2>🍽️ المنيو الرئيسي</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1606755962773-0b2e3c9f36b9">
+      <h3>شاورما الدجاج</h3>
+      <p>شاورما دجاج طازج مع صوص مميز</p>
+      <strong>5$</strong>
+    </div>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1598514983693-4f5f35aeb4c6">
+      <h3>شاورما العلامة</h3>
+      <p>شاورما مميزة بطعم لا يُنسى</p>
+      <strong>6$</strong>
+    </div>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+      <h3>برجر باللحم</h3>
+      <p>لحم طازج مع جبنة وخبز مقرمش</p>
+      <strong>8$</strong>
+    </div>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb30">
+      <h3>شاورما اللحم</h3>
+      <p>شاورما لحم غني بالنكهات</p>
+      <strong>7$</strong>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🥤 المشروبات</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1598514983768-bde1142b3ecb">
+      <h3>كوكاكولا</h3>
+      <p>مشروب غازي بارد</p>
+      <strong>1$</strong>
+    </div></section>
+
+<footer>
+  <p>📍 الموقع: أنطاكيا، شارع السوين</p>
+  <p>© 2026 مطعم JX الرائع</p>
+</footer>
+
+<script>
+// سلايدر الصور في الهيدر
+let slides = document.querySelectorAll('header img');
+let current = 0;
+setInterval(() => {
+  slides[current].classList.remove('active');
+  current = (current+1) % slides.length;
+  slides[current].classList.add('active');
+}, 3000);
+</script>
+
+</body>
+</html>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4436f7">
+      <h3>سبرايت</h3>
+      <p>مشروب غازي منعش</p>
+      <strong>1$</strong>
+    </div>
+  </div>
+</section>
+
+<div class="contact">
+  📞 للتوصيل اتصل على: <a href="tel:+905355798240">05355798240</a>
+</div>
+
+<section class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.567755!2d36.181!3d36.202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzZCDQogMzYnNDEuOCJOIDM2wrAxMCc1MC4xIkU!5e0!3m2!1sar!2str!4v1662000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
